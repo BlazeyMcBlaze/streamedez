@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-  <addon id="plugin.video.streamedez" name="StreamedEZ" version="0.0.9" provider-name="BlazeyMcBlazeFace">
+  <addon id="plugin.video.streamedez" name="StreamedEZ" version="0.1.0" provider-name="BlazeyMcBlazeFace">
     <requires>
       <import addon="xbmc.python" version="3.0.0"/>
       <import addon="script.module.requests" version="2.12.0"/>
@@ -20,18 +20,18 @@
       </assets>
     </extension>
   </addon>
+ <addon id="service.christmascountdown" name="Christmas Countdown" version="1.0.5" provider-name="BlazeyMcBlazeFace">
+   <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.service" library="resources/lib/service.py" start="startup">
+    <provides>service</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Simple Christmas countdown overlay</summary>
+    <description>Starts a small overlay showing days/hours/minutes/seconds until Dec 25.</description>
+    <platform>all</platform>
+  </extension>
+  <language>en</language>
+</addon>
  </addons>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
